@@ -149,7 +149,7 @@ DEALINGS IN THE SOFTWARE.
 
           var access = new XMLHttpRequest();
 
-          access.open("POST", "https://api.storygraph.me/syntaxnet", true);
+          access.open("POST", "localhost:3000/syntaxnet", true);
           access.setRequestHeader("content-type", "application/json");
           access.send(JSON.stringify({
             input: j.text.results[i].alternatives[0].transcript,
@@ -166,7 +166,7 @@ DEALINGS IN THE SOFTWARE.
               var description = summary.join(" ")
 
                   var bingAjax = new XMLHttpRequest();
-              bingAjax.open("GET", "https://api.storygraph.me/image?q=" + description, true);
+              bingAjax.open("GET", "localhost:3000/image?q=" + description, true);
               bingAjax.send();
               bingAjax.onload = function() {
                   if (this.status >= 200 && this.status < 300) {
