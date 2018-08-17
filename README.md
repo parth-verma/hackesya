@@ -1,3 +1,4 @@
+
 # Story Graph
 this is a speech to image api with an optional web app. It's main use case is for bed time
 story telling: imagine telling a story to someone and having an app render

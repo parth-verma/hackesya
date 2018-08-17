@@ -118,7 +118,7 @@ DEALINGS IN THE SOFTWARE.
     fd.append('data', blob);
 
     var ajax = new XMLHttpRequest();
-    ajax.open("POST", "https://api.storygraph.me/nlp", true);
+    ajax.open("POST", "localhost:5000/nlp", true);
     ajax.send(fd);
     ajax.onload = function() {
       if (this.status >= 200 && this.status < 300) {
